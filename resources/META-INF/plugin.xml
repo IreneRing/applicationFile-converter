@@ -1,0 +1,54 @@
+<idea-plugin>
+  <id>com.by-zxy.plugins.appFileConverter</id>
+  <name>applicationFile-converter</name>
+  <version>1.0</version>
+  <vendor email="zxy@live.com" url="http://www.zxy.com">zxy</vendor>
+
+  <description><![CDATA[
+     <h1>Convert/New YAML and Properties File</h1>
+     <p><b>You can quickly not only convert <em>Properties</em> files to <em>YAML</em> files(<em>YAML</em> files to <em>Properties</em> files),</b>
+     <b>but also new <em>Properties</em> files with <em>YAML</em> files(<em>YAML</em> files with <em>Properties</em> files)</b></p>
+    ]]></description>
+
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="201.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <group id="com.plugins.appFileConverter" text="Convert/New YAML and Properties File"
+           description="You can quickly convert/new Properties files to/with YAML files, or YAML files to/with Properties files">>
+      <!--在ide左边编辑栏菜单文件右击中显示-->
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+      <!--在ide右边项目打开的文件中右击显示-->
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+
+      <action class="com.plugins.appFileConverter.ConvertYamlAction"
+              text="Convert YAML File"
+              description="You can quickly convert Properties files to YAML files">
+      </action>
+      <action class="com.plugins.appFileConverter.ConvertPropAction"
+              text="Convert Properties File"
+              description="You can quickly convert YAML files to Properties files">
+      </action>
+      <action class="com.plugins.appFileConverter.NewYamlAction"
+              text="New YAML File"
+              description="You can quickly new YAML files with Properties files">
+      </action>
+      <action class="com.plugins.appFileConverter.NewPropAction"
+              text="New Properties File"
+              description="You can quickly new Properties files with YAML files">
+      </action>
+    </group>
+
+  </actions>
+
+</idea-plugin>
