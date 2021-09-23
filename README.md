@@ -5,7 +5,7 @@
 
 [Github](https://github.com/by-zxy/applicationFile-converter) |  [JetBrains Plugin Download](https://plugins.jetbrains.com/plugin/17650-applicationfile-converter)
 
-
+> See the template ConvertYamlAndProperties [Github] https://github.com/chencn/ConvertYamlAndProperties
 
 ## Change Log
 >1.0.0
