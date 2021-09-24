@@ -1,13 +1,13 @@
 <idea-plugin>
   <id>com.by-zxy.plugins.appFileConverter</id>
   <name>applicationFile-converter</name>
-  <version>1.0</version>
-  <vendor email="zxy@live.com" url="http://www.zxy.com">zxy</vendor>
+  <version>1.1</version>
+  <vendor email="zxy@live.com" url="https://github.com/by-zxy/applicationFile-converter">zxy</vendor>
 
   <description><![CDATA[
-     <h1>Convert/New YAML and Properties File</h1>
+     <h1>Convert YAML/Properties File or New a YAML/Properties File</h1>
      <p><b>You can quickly not only convert <em>Properties</em> files to <em>YAML</em> files(<em>YAML</em> files to <em>Properties</em> files),</b>
-     <b>but also new <em>Properties</em> files with <em>YAML</em> files(<em>YAML</em> files with <em>Properties</em> files)</b></p>
+     <b>but also new a <em>Properties</em> files with <em>YAML</em> files(<em>YAML</em> files with <em>Properties</em> files)</b></p>
     ]]></description>
 
 
