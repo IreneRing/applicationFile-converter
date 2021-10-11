@@ -7,5 +7,7 @@
 
 > See the template ConvertYamlAndProperties [Github] https://github.com/chencn/ConvertYamlAndProperties
 
+> build use the bottom "Prepare Plugin Module 'xx' for Deployment"
+ 
 ## Change Log
->1.0.0
+>1.2
